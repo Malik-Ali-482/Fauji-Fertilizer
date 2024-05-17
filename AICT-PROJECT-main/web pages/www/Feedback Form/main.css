@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  border: 0;
+  overflow-x: hidden;
+}
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    border-bottom: 0.1px solid rgb(224, 222, 222);
+  }
+  .header .logo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-left: 30px;
+    padding:35px 40px;   
+  }
 body, html {
     height: 100%;
     margin: 0;
