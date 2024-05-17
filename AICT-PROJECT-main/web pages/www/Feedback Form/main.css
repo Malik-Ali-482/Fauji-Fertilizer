@@ -7,7 +7,7 @@
 body, html {
   height: 100%;
   font-family: Arial, sans-serif;
-  background-image: url('AICT-PROJECT-main/web pages/www/images/loginemployeeimage.jpg'); 
+  background-image: url('AICT-PROJECT-main/web pages/www/images/loginemployeeimage.jpg'); /* Replace with your background image URL */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -20,23 +20,25 @@ body, html {
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-  border-bottom: 0.1px solid rgb(224, 222, 222);
   width: 100%;
-  padding: 10px 0;
+  padding: 10px;
+  position: relative;
+}
+
+.header .logo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .header .logo img {
-  width: 230px;
-  height: 95px;
+  width: 100px;
+  height: auto;
 }
 
 .go-back {
-  position: absolute;
-  top: 10px;
-  left: 10px;
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 
 .go-back img {
@@ -47,7 +49,7 @@ body, html {
 .go-back span {
   margin-left: 5px;
   font-size: 16px;
-  color: black;
+  color: white;
 }
 
 #form-container {
