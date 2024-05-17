@@ -1,0 +1,58 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Employee details styles */
+#employee-details {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#employee-details h2 {
+  margin: 0 0 0.5rem;
+}
+
+#employee-details ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#employee-details ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+#employee-details ul li span {
+  width: 30%;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Employee main.css" />
+    <title>Employee Details</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://malik-ali-482.github.io/Fauji-Fertilizer/AICT-PROJECT-main/web%20pages/index.html">Products</a></li>
+          <li><a href="https://malik-ali-482.github.io/Fauji-Fertilizer/AICT-PROJECT-main/web%20pages/index.html">Orders</a></li>
+          <li><a href="https://malik-ali-482.github.io/Fauji-Fertilizer/AICT-PROJECT-main/web%20pages/index.html">Inventory</a></li>
+          <li><a href="https://malik-ali-482.github.io/Fauji-Fertilizer/AICT-PROJECT-main/web%20pages/index.html">Suppliers</a></li>
+          <li><a href="https://malik-ali-482.github.io/Fauji-Fertilizer/AICT-PROJECT-main/web%20pages/index.html">Recommendations</a></li>
+          <li><a href="https://malik-ali-482.github.io/Fauji-Fertilizer/AICT-PROJECT-main/web%20pages/index.html">Survey</a></li>
+          <li><a href="https://malik-ali-482.github.io/Fauji-Fertilizer/AICT-PROJECT-main/web%20pages/index.html">Inventory</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Employee Details</h1>
+      <div id="employee-details">
+        <!-- Employee data will be rendered here -->
+      </div>
+    </main>
+  
+
+    <script>
+	const employeeData = {
+        id: 123,
+        firstName: 'John',
+        lastName: 'Doe',
+        role: 'Manager',
+        email: 'johndoe@example.com',
+        phoneNumber: '123-456-7890',
+        department: 'Operations'
+      };
+      const employeeDetails = document.getElementById('employee-details');
+      const employeeInfo = document.createElement('ul');
+
+      const idInfo = document.createElement('li');
+      const idLabel = document.createElement('span');
+      idLabel.textContent = 'ID:';
+      const idValue = document.createElement('span');
+      idValue.textContent = employeeData.id;
+      idInfo.appendChild(idLabel);
+      idInfo.appendChild(idValue);
+      employeeInfo.appendChild(idInfo);
+
+      const nameInfo = document.createElement('li');
+      const nameLabel = document.createElement('span');
+      nameLabel.textContent = 'Name:';
+      const nameValue = document.createElement('span');
+      nameValue.textContent = `${employeeData.firstName} ${employeeData.lastName}`;
+      nameInfo.appendChild(nameLabel);
+      nameInfo.appendChild(nameValue);
+      employeeInfo.appendChild(nameInfo);
+
+      const roleInfo = document.createElement('li');
+      const roleLabel = document.createElement('span');
+      roleLabel.textContent = 'Role:';
+      const roleValue = document.createElement('span');
+      roleValue.textContent = employeeData.role;
+      roleInfo.appendChild(roleLabel);
+      roleInfo.appendChild(roleValue);
+      employeeInfo.appendChild(roleInfo);
+
+      const emailInfo = document.createElement('li');
+      const emailLabel = document.createElement('span');
+      emailLabel.textContent = 'Email:';
+      const emailValue = document.createElement('span');
+      emailValue.textContent = employeeData.email;
+      emailInfo.appendChild(emailLabel);
+      emailInfo.appendChild(emailValue);
+      employeeInfo.appendChild(emailInfo);
+
+      const phoneNumberInfo = document.createElement('li');
+      const phoneNumberLabel = document.createElement('span');
+      phoneNumberLabel.textContent = 'Phone Number:';
+      const phoneNumberValue = document.createElement('span');
+      phoneNumberValue.textContent = employeeData.phoneNumber;
+      phoneNumberInfo.appendChild(phoneNumberLabel);
+      phoneNumberInfo.appendChild(phoneNumberValue);
+      employeeInfo.appendChild(phoneNumberInfo);
+
+      const departmentInfo = document.createElement('li');
+      const departmentLabel = document.createElement('span');
+      departmentLabel.textContent = 'Department:';
+      const departmentValue = document.createElement('span');
+      departmentValue.textContent = employeeData.department;
+	departmentInfo.appendChild(departmentLabel);
+      departmentInfo.appendChild(departmentValue);
+      employeeInfo.appendChild(departmentInfo);
+
+      employeeDetails.appendChild(employeeInfo);
+    </script>
+  </body>
+</html>
