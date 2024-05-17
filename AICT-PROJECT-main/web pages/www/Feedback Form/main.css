@@ -5,13 +5,10 @@
 }
 
 body, html {
-  height: 100%;
   font-family: Arial, sans-serif;
   background-image: url('AICT-PROJECT-main/web pages/www/images/loginemployeeimage.jpg'); /* Replace with your background image URL */
   background-size: cover;
   background-position: center;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -59,7 +56,7 @@ body, html {
   text-align: center;
   max-width: 300px;
   width: 100%;
-  margin-top: 100px; /* Adjust the position of the form */
+  margin-top: 100px; 
 }
 
 #form-container h2 {
