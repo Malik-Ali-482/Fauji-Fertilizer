@@ -3,15 +3,39 @@
   border: 0;
   overflow-x: hidden;
 }
-
-body, html {
+body {
+  position: relative; /* added */
   font-family: Arial, sans-serif;
-  background-image: url('AICT-PROJECT-main/web pages/www/images/loginemployeeimage.jpg'); /* Replace with your background image URL */
+  background-image: url('https://malik-ali-482.github.io/Fauji-Fertilizer/AICT-PROJECT-main/web%20pages/www/images/loginemployeeimage.jpg'); /* Replace with your background image URL */
   background-size: cover;
   background-position: center;
   align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
+.footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: absolute; /* added */
+  bottom: 0; /* added */
+  width: 100%; /* added */
+  clear: both;
+}s
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  width: 100%;
+  padding: 20px; /* increased padding */
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 40px; /* added height */
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -20,6 +44,7 @@ body, html {
   width: 100%;
   padding: 10px;
   position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* added to give a subtle shadow effect */
 }
 
 .header .logo {
@@ -30,7 +55,21 @@ body, html {
 
 .header .logo img {
   width: 100px;
-  height: auto;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .header .logo img {
+    width: 80px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header .logo img {
+    width: 60px;
+    height: 30px;
+  }
 }
 
 .go-back {
@@ -56,7 +95,8 @@ body, html {
   text-align: center;
   max-width: 300px;
   width: 100%;
-  margin-top: 100px; 
+  margin: 100px auto; /* changed to make the form container centered */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* added to give a subtle shadow effect */
 }
 
 #form-container h2 {
@@ -83,3 +123,4 @@ body, html {
 #form-container button:hover {
   background-color: #45a049;
 }
+
